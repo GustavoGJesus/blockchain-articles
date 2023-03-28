@@ -17,10 +17,12 @@ export function Main(){
 
           <ParagraphText>
             Write articles to help the web3 community and earn the plant token
+            <br />
+            Connect your wallet, for start write!
           </ParagraphText>
           <Button>Connect Wallet</Button>
         </MainText>
-        <img src={TokenIcon} alt="icon token"/>
+        <img src={TokenIcon} alt="icon token" />
       </MainContent>
     </MainContainer>
   );

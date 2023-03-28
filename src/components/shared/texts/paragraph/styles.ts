@@ -5,9 +5,10 @@ import { MediaQuerys } from "../../../../styles/global";
 
 export const Paragraph = styled.h1`
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 400;
 
   ${MediaQuerys.sm} {
     font-size: 15px;
+    font-weight: 400;
   }
 `;

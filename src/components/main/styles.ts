@@ -6,7 +6,7 @@ import { MediaQuerys } from "../../styles/global";
 
 export const MainContainer = styled.div`
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   padding: 20px 50px 20px 50px;
 
   display: flex;
@@ -51,15 +51,22 @@ export const MainText = styled.div`
 `;
 
 export const Button = styled.button`
-  width: 150px;
-  padding: 20px;
+  width: 200px;
+  padding: 25px;
   margin-top: 20px;
   border-radius: 10px;
 
   border: none;
   background: var(--green-600);
   color: var(--green-800);
-  font-weight: 700;
+
+  font-weight: 600;
+  font-size: 20px;
 
   cursor: pointer;
+
+  ${MediaQuerys.sm} {
+    padding: 20px;
+    font-size: 15px;
+  }
 `;
