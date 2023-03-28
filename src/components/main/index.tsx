@@ -1,6 +1,9 @@
+// styles
+import { MainContainer, MainContent } from "./styles";
+
+// components
 import { ParagraphText } from "../shared/texts/paragraph";
 import { TitleText } from "../shared/texts/title";
-import { MainContainer, MainContent } from "./styles";
 
 export function Main(){
   return (
