@@ -50,7 +50,7 @@ export function Main() {
             });
             setSucess(false);
           }
-          toast.success("Successfully connected wallet 🥳", {
+          toast.success("Wallet connected successfully 🥳", {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
