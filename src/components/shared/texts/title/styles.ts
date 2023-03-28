@@ -8,6 +8,6 @@ export const Title = styled.h1`
   font-weight: 800;
 
   ${MediaQuerys.sm} {
-    font-size: 45px;
+    font-size: 50px;
   }
 `;

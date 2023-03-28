@@ -8,6 +8,6 @@ export const Paragraph = styled.h1`
   font-weight: 500;
 
   ${MediaQuerys.sm} {
-    font-size: 20px;
+    font-size: 15px;
   }
 `;
