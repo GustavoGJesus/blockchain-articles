@@ -6,9 +6,14 @@ import { GlobalStyles } from "./styles/global";
 import { Header } from "./components/header";
 import { Main } from "./components/main";
 
+//libs
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
+
 function App() {
   return (
     <>
+      <ToastContainer />
       <Global styles={GlobalStyles} />
       <Header />
       <Main />
