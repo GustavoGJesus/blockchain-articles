@@ -16,7 +16,7 @@ export const MainContainer = styled.div`
 
   ${MediaQuerys.sm} {
     width: 100% !important;
-    height: 80vh;
+    height: 90vh;
     padding: 20px;
   }
 `;
@@ -48,4 +48,18 @@ export const MainText = styled.div`
   /* width: 70%; */
   display: flex;
   flex-direction: column;
+`;
+
+export const Button = styled.button`
+  width: 150px;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+
+  border: none;
+  background: var(--green-600);
+  color: var(--green-800);
+  font-weight: 700;
+
+  cursor: pointer;
 `;
