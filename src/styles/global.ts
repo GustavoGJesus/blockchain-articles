@@ -25,7 +25,7 @@ export const GlobalStyles = css`
   body {
     font-family: "Poppins", sans-serif;
     background: var(--green-300);
-    color: var(--white);
+    color: var(--green-800);
     overflow-y: hidden;
     overflow-x: hidden;
   }
