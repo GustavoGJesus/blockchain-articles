@@ -1,10 +1,17 @@
-function App() {
+// styles
+import { Global } from "@emotion/react";
+import { GlobalStyles } from "./styles/global";
 
+// components
+import { Header } from "./components/header";
+
+function App() {
   return (
-    <div>
-      hello
-    </div>
-  )
+    <>
+      <Global styles={GlobalStyles} />
+      <Header />
+    </>
+  );
 }
 
-export default App
+export default App;
