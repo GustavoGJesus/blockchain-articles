@@ -12,11 +12,14 @@ import { toast } from "react-toastify";
 // images
 import TokenIcon from "../../assets/token-icon.png";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export function Main() {
   const [sucess, setSucess] = useState<boolean>();
   const [messageError, setMessageError] = useState<string>("");
   const [wallet, setWallet] = useState<string>();
+
+  const navigate = useNavigate();
 
   function connectWallet() {
     if (!window.ethereum) {
@@ -52,7 +55,7 @@ export function Main() {
           }
           toast.success("Wallet connected successfully 🥳", {
             position: "top-right",
-            autoClose: 5000,
+            autoClose: 3000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
@@ -63,6 +66,7 @@ export function Main() {
           setSucess(true);
           localStorage.setItem("@walletAddress:", accounts[0]);
           setWallet(accounts[0]);
+          navigate("/articles-list");
         })
         .catch((err) =>
           toast.error("Wallet not found or allowed 😥", {
