@@ -74,7 +74,7 @@ export const CardContainer = styled.div`
   flex-direction: column;
   width: 100%;
 
-  margin-top: 100px;
+  margin-top: 50px;
   gap: 20px;
 
 `;
