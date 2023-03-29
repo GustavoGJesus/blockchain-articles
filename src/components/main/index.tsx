@@ -52,6 +52,7 @@ export function Main() {
               theme: "colored",
             });
             setSucess(false);
+            navigate("/articles-list");
           }
           toast.success("Wallet connected successfully 🥳", {
             position: "top-right",
