@@ -12,7 +12,7 @@ import { toast } from "react-toastify";
 // images
 import TokenIcon from "../../assets/token-icon.png";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export function Main() {
   const [sucess, setSucess] = useState<boolean>();
@@ -52,7 +52,6 @@ export function Main() {
               theme: "colored",
             });
             setSucess(false);
-            navigate("/articles-list");
           }
           toast.success("Wallet connected successfully 🥳", {
             position: "top-right",
@@ -95,7 +94,9 @@ export function Main() {
             <br />
             Connect your wallet, for start write!
           </ParagraphText>
-          <Button onClick={connectWallet}>Connect Wallet</Button>
+          <Link to="/articles-list">
+            <Button onClick={connectWallet}>Connect Wallet</Button>
+          </Link>
         </MainText>
         <img src={TokenIcon} alt="icon token" />
       </MainContent>
