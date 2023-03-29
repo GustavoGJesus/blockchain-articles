@@ -26,7 +26,7 @@ export const GlobalStyles = css`
     font-family: "Poppins", sans-serif;
     background: var(--green-300);
     color: var(--green-800);
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     overflow-x: hidden;
   }
 `;

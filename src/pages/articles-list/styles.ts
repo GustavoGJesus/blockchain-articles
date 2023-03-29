@@ -24,7 +24,8 @@ export const SearchAndCreateContent = styled.div`
   margin-top: 30px;
 
   input {
-    width: 250px;
+    width: 280px;
+    height: 60px;
     border: none;
     padding: 10px 8px 10px 8px;
 
@@ -33,18 +34,20 @@ export const SearchAndCreateContent = styled.div`
     background: transparent;
 
     outline: none;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
 
     ${MediaQuerys.sm} {
-      width: 200px;
+      width: 180px;
       font-size: 12px;
+      height: 50px;
     }
   }
 `;
 
 export const Button = styled.button`
-  width: 150px;
+  width: 180px;
+  height: 60px;
   padding: 15px;
 
   border-radius: 10px;
@@ -54,13 +57,15 @@ export const Button = styled.button`
   color: var(--green-600);
 
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
 
   cursor: pointer;
 
   ${MediaQuerys.sm} {
     padding: 15px;
     font-size: 12px;
+    height: 50px;
+    width: 150px;
   }
 `;
 
@@ -69,7 +74,7 @@ export const CardContainer = styled.div`
   flex-direction: column;
   width: 100%;
 
-  margin-top: 40px;
+  margin-top: 100px;
   gap: 20px;
 
 `;
